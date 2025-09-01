@@ -11,7 +11,7 @@ winget install -e --id Microsoft.PowerShell
 # PowerShell
 
 python -m venv .venv
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser   # 최초 1회만
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser  
 .\.venv\Scripts\Activate.ps1
 
 pip install streamlit pydeck pandas
