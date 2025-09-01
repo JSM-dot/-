@@ -1,0 +1,11 @@
+# 폴더에 .enve 파일 만들고 발급키 생성 
+HIRA_API_KEY=발급키 #(의료기관 데이터)
+LOCALDATA_API_KEY=발급키 #(일반 업종 인허가 데이터 )
+JUSO_API_KEY=발급키 # (도로명 주소 필x )
+BING_API_KEY=발급키 # (홈페이지 검색 )
+
+
+#API 키는 변경가능
+#API 키 변경은 항상 Cnt + C로 App 종료후 env 파일 생성후 재실행 
+
+# 

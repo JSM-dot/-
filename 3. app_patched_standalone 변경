@@ -1,0 +1,9 @@
+copy /Y "C:\Path\To\Downloads\app_patched_standalone.py" ".\app.py"
+
+python -m streamlit run app.py
+
+.\run_app.ps1
+
+ni .env -Force
+notepad .env
+

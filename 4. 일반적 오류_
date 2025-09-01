@@ -1,0 +1,14 @@
+#streamlit을 찾을 수 없음 → venv 활성화 후 재설치
+.\.venv\Scripts\Activate.ps1
+python -m pip install streamlit
+python -m streamlit run app.py
+
+#포트 충돌  > 다른포트 실행 
+python -m streamlit run app.py --server.port 8502
+
+#LAN에서 접속 허용
+python -m streamlit run app.py --server.address 0.0.0.0 --server.port 8501
+
+#파워셀 보안정책 풀기
+Get-ExecutionPolicy
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser

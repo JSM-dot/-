@@ -1,0 +1,8 @@
+# python 3.12 
+winget install -e --id Python.Python.3.12
+
+# check 
+py -0p
+
+# optional 
+winget install -e --id Microsoft.PowerShell
