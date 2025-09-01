@@ -6,3 +6,14 @@ py -0p
 
 # optional 
 winget install -e --id Microsoft.PowerShell
+
+#테스트용 
+# PowerShell
+
+python -m venv .venv
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser   # 최초 1회만
+.\.venv\Scripts\Activate.ps1
+
+pip install streamlit pydeck pandas
+python -m streamlit run app_sample_streamlit.py
+
